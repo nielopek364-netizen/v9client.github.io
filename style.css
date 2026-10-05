@@ -620,3 +620,43 @@ body.modal-open {
         animation-iteration-count: 1 !important;
     }
 }
+
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border-radius: 8px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 10px rgba(123, 63, 228, 0.28));
+}
+
+.hero-logo {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 20px rgba(123, 63, 228, 0.35));
+}
+
+@media (max-width: 680px) {
+    .brand-logo {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+    }
+
+    .hero-logo {
+        width: 82px;
+        height: 82px;
+        border-radius: 15px;
+    }
+}
