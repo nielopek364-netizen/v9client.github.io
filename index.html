@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0F0B1A">
+    <meta name="description" content="Download v9pv Client, a Fabric mod for Minecraft.">
+    <title>v9pv Client — Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="#top" data-config="name">v9pv Client</a>
+            <div class="nav-links">
+                <a href="#download">Download</a>
+                <a href="#install">Install</a>
+                <a href="#requirements">Requirements</a>
+                <a href="#" data-github-link>GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-card">
+                <span class="eyebrow">FABRIC MOD</span>
+                <h1 id="hero-title" data-config="name">v9pv Client</h1>
+                <p class="hero-subtitle">
+                    Performance, customization and PvP quality-of-life for Minecraft
+                    <span data-config="minecraftVersion"></span>.
+                </p>
+
+                <div class="badges" aria-label="Compatibility">
+                    <span class="badge">Minecraft <span data-config="minecraftVersion"></span></span>
+                    <span class="badge">Fabric</span>
+                    <span class="badge">v<span data-config="version"></span></span>
+                </div>
+
+                <button class="button button-primary button-large" type="button" data-download-button>
+                    DOWNLOAD .JAR
+                </button>
+
+                <p class="file-line">
+                    <code data-config="fileName"></code>
+                    <span class="file-size" data-file-size hidden>• <span data-config="fileSize"></span></span>
+                </p>
+            </div>
+        </section>
+
+        <section id="download" class="section container" aria-labelledby="download-title">
+            <div class="section-heading">
+                <span class="eyebrow">LATEST VERSION</span>
+                <h2 id="download-title"><span data-config="name"></span> <span data-config="version"></span></h2>
+            </div>
+
+            <article class="card download-card">
+                <dl class="details-grid">
+                    <div><dt>Minecraft</dt><dd data-config="minecraftVersion"></dd></div>
+                    <div><dt>Mod loader</dt><dd>Fabric</dd></div>
+                    <div><dt>Fabric Loader</dt><dd data-config="fabricLoaderVersion"></dd></div>
+                    <div><dt>Java</dt><dd data-config="javaVersion"></dd></div>
+                    <div class="wide"><dt>File</dt><dd><code data-config="fileName"></code></dd></div>
+                    <div class="wide" data-release-date-row hidden><dt>Release date</dt><dd data-config="releaseDate"></dd></div>
+                </dl>
+
+                <div class="button-row">
+                    <button class="button button-primary" type="button" data-download-button>DOWNLOAD</button>
+                    <a class="button button-secondary" href="#" data-github-link>GitHub</a>
+                </div>
+            </article>
+
+            <article class="card checksum-card" data-checksum-section hidden>
+                <div>
+                    <span class="card-label">SHA-256</span>
+                    <code class="checksum" data-config="sha256"></code>
+                </div>
+                <button class="button button-small button-secondary" type="button" data-copy-checksum>COPY</button>
+            </article>
+        </section>
+
+        <section id="install" class="section container" aria-labelledby="install-title">
+            <div class="section-heading">
+                <span class="eyebrow">INSTALLATION</span>
+                <h2 id="install-title">How to install</h2>
+            </div>
+
+            <article class="card">
+                <ol class="steps">
+                    <li>Install Minecraft <strong data-config="minecraftVersion"></strong>.</li>
+                    <li>Install Fabric Loader for Minecraft <strong data-config="minecraftVersion"></strong>.</li>
+                    <li>Install Fabric API <strong data-config="fabricApiVersion"></strong> if required by the current mod metadata/build.</li>
+                    <li>Download <code data-config="fileName"></code>.</li>
+                    <li>Press <kbd>Windows</kbd> + <kbd>R</kbd>.</li>
+                    <li>Enter <code>%appdata%\.minecraft\mods</code>.</li>
+                    <li>Put the downloaded <code>.jar</code> inside the <code>mods</code> folder.</li>
+                    <li>Start Minecraft using the Fabric profile.</li>
+                    <li>Do <strong>not</strong> extract the <code>.jar</code>.</li>
+                </ol>
+
+                <aside class="info-box" aria-label="Installation warning">
+                    <strong>Do not extract the .jar file.</strong>
+                    <span>Place the entire <code>.jar</code> file inside <code>.minecraft/mods</code>.</span>
+                </aside>
+            </article>
+        </section>
+
+        <section id="requirements" class="section container" aria-labelledby="requirements-title">
+            <div class="section-heading">
+                <span class="eyebrow">COMPATIBILITY</span>
+                <h2 id="requirements-title">Requirements</h2>
+            </div>
+
+            <article class="card">
+                <dl class="requirements-list">
+                    <div><dt>Minecraft</dt><dd data-config="minecraftVersion"></dd></div>
+                    <div><dt>Loader</dt><dd>Fabric Loader <span data-config="fabricLoaderVersion"></span></dd></div>
+                    <div><dt>Fabric API</dt><dd data-config="fabricApiVersion"></dd></div>
+                    <div><dt>Java</dt><dd data-config="javaVersion"></dd></div>
+                </dl>
+            </article>
+        </section>
+
+        <section class="section container" aria-labelledby="versions-title">
+            <div class="section-heading">
+                <span class="eyebrow">RELEASES</span>
+                <h2 id="versions-title">Other versions</h2>
+            </div>
+            <div class="releases" data-releases-list></div>
+        </section>
+
+        <section class="section container" aria-labelledby="faq-title">
+            <div class="section-heading">
+                <span class="eyebrow">HELP</span>
+                <h2 id="faq-title">FAQ</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="card">
+                    <summary>Where do I put the downloaded file?</summary>
+                    <p>Put the <code>.jar</code> file in your Minecraft <code>mods</code> folder.</p>
+                </details>
+                <details class="card">
+                    <summary>Should I extract the JAR?</summary>
+                    <p>No. Put the complete <code>.jar</code> file in the <code>mods</code> folder.</p>
+                </details>
+                <details class="card">
+                    <summary>What Minecraft version is supported?</summary>
+                    <p>Minecraft <span data-config="minecraftVersion"></span>.</p>
+                </details>
+                <details class="card">
+                    <summary>Which mod loader is required?</summary>
+                    <p>Fabric.</p>
+                </details>
+                <details class="card">
+                    <summary>Why does Minecraft not see the mod?</summary>
+                    <p>
+                        Check that Minecraft, Fabric Loader and required dependencies match the versions listed on this page,
+                        and that the <code>.jar</code> is inside the correct <code>mods</code> folder.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong data-config="name">v9pv Client</strong>
+                <span>Minecraft Fabric Client</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-github-link>GitHub</a>
+                <span>© <span data-current-year></span></span>
+            </div>
+        </div>
+        <p class="container disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
+    </footer>
+
+    <div class="modal-backdrop" data-download-modal hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+            <button class="modal-close" type="button" aria-label="Close" data-modal-close>×</button>
+            <span class="eyebrow">DOWNLOAD</span>
+            <h2 id="modal-title">Download unavailable</h2>
+            <p id="modal-description">The .jar file has not been uploaded yet.</p>
+            <div class="button-row">
+                <a class="button button-secondary" href="#" data-github-link>GitHub</a>
+                <button class="button button-primary" type="button" data-modal-close>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
